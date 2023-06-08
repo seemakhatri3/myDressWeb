@@ -1,0 +1,34 @@
+.parent{
+width: 20px;
+    display: flex;
+}
+.parent .child1{
+    border: 1px solid black;
+        height: 100px;
+        margin: 10px;
+        background-color: blueviolet;
+
+    }
+
+        .child2 {
+            border: 1px solid black;
+            height: 100px;
+            margin: 10px;
+            background-color: lightcoral;
+            align-self: self-start;
+    
+        }
+                .child3 {
+                    border: 1px solid black;
+                    height: 100px;
+                    margin: 10px;
+                    background-color: darkblue;
+        
+                }
+                                .child4 {
+                                    border: 1px solid black;
+                                    height: 100px;
+                                    margin: 10px;
+                                    background-color: darkgreen;
+                
+                                }

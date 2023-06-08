@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="https://fontawesome.com/icons/lock?f=classic&s=duotone">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script> </script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <i class="fas fa-shopping-basket"></i>My Dress</a>
+    
+        <nav class="navbar">
+            <a href="#Home">Home</a>
+            <a href="#Features">Features</a>
+            <a href="#Products">Products</a>
+            <a href="#Catogories">Catogories</a>
+            <a href="#About Us">Aabout Us</a>
+    
+    
+        </nav>
+        <div class="icons">
+            <a class="fas fa-bars" id="menu-btn"></a>
+            <a class="fas fa-search" id="search-btn"></a>
+            <a class="fas fa-shopping-cart" id="Cart-btn"></a>
+            <a href="registeration.html" id="users-btn"><i class="fas fa-users"></i> Login/Sign Up</a>
+    
+        </div>
+    
+        </div>
+    
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here.......">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+    
+
+    <div class="form">
+        <div class="form-box">
+            <div class="button-box">
+                <div class="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Registration</button>
+            </div>
+                        <div class="social-media">
+<i class="fa-brands fa-facebook-f"></i>                            <i class="fa-brands fa-google"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+            <form id="log-in" class="input-group">
+
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <i class="fa-solid fa-envelope"></i>
+                  <input type="text" class="input-field" placeholder="Enter Your password" required>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="checkbox" class="checkbox"><span>remember password</span>
+                    <button type="submit" class="submit-btn">Log In</button>
+            </form>
+                        <form id="register" class="input-group">
+                        
+                            <input type="text" class="input-field" placeholder="Enter Your Email" required>
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" class="input-field" placeholder="Enter Your password" required>
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
+                            <button type="submit" class="submit-btn">register</button>
+                        </form>
+
+        </div>
+        
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+    </script>
+</body>
+</html>

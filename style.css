@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Poppins:ital,wght@0,100;0,200;1,400&family=Roboto:ital,wght@1,900&family=Space+Grotesk:wght@300;400&display=swap');
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+
+    }
+    .header{
+        padding: 2rem;
+    }
+}
+@media (max-width:768px) {
+.header .navbar{
+    position: absolute;
+    top: 110%; right: 2rem;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+    background: #eee;
+}
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}
+
+:root{
+--orange: #ff7800;
+--black: #130f40;
+--light-color:#666;
+--box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+--border:  1rem solid rgba(0, 0, 0,.1);
+--outline: 1rem solid rgba(0, 0, 0,.1);
+--outline-hover:2rem solid var(--black);
+}
+*{
+  margin: 0;
+   padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  transform: all .2s linear;  
+}
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    cursor: pointer;
+    outline: none;
+
+}
+
+section{
+    padding: 2rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    outline: none;
+    
+    
+}
+.btn:hover{
+    background: var(--orange);
+    color: #eee;
+}
+.header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+
+}
+.header  .logo i{
+    color: var(--orange);
+
+}
+ .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+    text-decoration: none;
+
+}
+.header .navbar a:hover{
+    color: var(--orange);
+
+}
+.header .icons a {
+    height: 2.5;
+    width: 3.5;
+    line-height: 1.5;
+    border-radius: 15rem;
+    font-size: 2rem;
+    color: var(--black);
+    margin-left: 3rem;
+}
+.header .icons a:hover{
+    color: var(--orange);
+}
+
+#menu-btn{
+    display: none;
+}
+#users-btn {
+    display: inline;
+    font-size: 1.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#users-btn:hover{
+    color:var(--orange);
+
+}
+
+
+
+.header .search-form{
+    position: absolute;
+    top: 110%; right: 4rem;
+    max-width: 50rem;
+    height: 4rem;
+    background: #eee;
+    border-radius: .3rem;
+    overflow: hidden;
+    display: flex;
+    align-items:center;
+    box-shadow: var(--box-shadow);
+
+}
+.header .search-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    font-size: 1.6rem;
+    text-transform: none;
+    color:var(--black);
+    padding: 0 1.5rem;
+
+
+}
+.header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+
+}
+.header .search-form label:hover{
+    color: var(--orange);
+
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/picture/banner-2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 17rem;
+    padding-bottom: 10rem;
+}
+.home .content{
+    text-align: center;
+    width: 60rem;
+
+}
+.home .content h3{
+    color: var(--black);
+    font-size: 3rem;
+
+}
+.home.content h3 span{
+    color: var(--orange);
+
+}
+.home .content p{
+    color: var(--light-color);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.features{
+
+}
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+.heading span{
+    background: var(--orange);
+    color: #fff;display: inline-block;
+    padding: .5rem .3rem;
+    margin: .6rem;
+    clip-path: polygon(100% 0%, 93% 50%, 100% 995, 0% 100%,7% 50%, 0% 0%);
+}
+.heading{
+    font-size: 2.5rem;
+}
